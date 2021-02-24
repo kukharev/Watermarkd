@@ -12,9 +12,9 @@ import getpass
 import os
 
 sg.theme("DarkTeal2")
-layout1 = [[sg.T("")], [sg.Text("Choose an Image:        ",pad=(0,10)), sg.Input(size=(45,2), key="-IN2-" ,change_submits=True), sg.FileBrowse(key="-IN-",pad=(0,10)), sg.T("   "),sg.Button("Preview")],
+layout1 = [[sg.T("")], [sg.Text("Выбрать картинку:        ",pad=(0,10)), sg.Input(size=(45,2), key="-IN2-" ,change_submits=True), sg.FileBrowse(key="-IN-",pad=(0,10)), sg.T("   "),sg.Button("Preview")],
             [sg.T("")],
-            [sg.T("Watermark Text:          "), sg.Multiline(key="-WMTEXT-", size=(30,4), default_text="Watermarkd")],
+            [sg.T("Водяной знак:          "), sg.Multiline(key="-WMTEXT-", size=(30,4), default_text="Водяной знак")],
             [sg.T("")],
             [sg.T("Font Size:                     ", pad=(0,0)), sg.Radio('Normal', "RADIO0", default=True, key="-R100-"), sg.Radio('Small', "RADIO0", default=False, key="-R101-"), sg.Radio('Large', "RADIO0", default=False, key="-R102-"), sg.T("      Value: "), sg.Input(key="-INFONTSIZE-", size=(10,1))],
             [sg.T("Transparency (1-255):    ", pad=(0,20)), sg.Slider(range=(1, 255), orientation='h', size=(35, 20), default_value=85, key="-WMTRANS-")],
